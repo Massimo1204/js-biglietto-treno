@@ -1,12 +1,9 @@
 let age = parseInt(prompt("Quanti anni hai?"));
 if( age <= 0){
-    age = prompt("Cerca di nascere prima di comprare un biglietto, scegli un'età valida");
+    age = prompt("Fecondazione fallita, scegli un'età valida perfavore");
 }
 else if ( age > 130) {
     age = prompt("Scusi, i cadaveri non sono permessi sul treno, scegli un'età vivente");
-}
-else{
-    age = age ;
 }
 
 document.getElementById('eta').innerHTML += age;
@@ -15,11 +12,8 @@ let distance = parseFloat(prompt("Quanti chilometri devi percorrere?"));
 if( distance <= 0){
     distance = prompt("Destinazione già raggiunta, digita una distanza da percorrere valida");
 }
-else{
-    distance = distance.toPrecision(3);
-}
 
-document.getElementById('distanza').innerHTML += distance;
+document.getElementById('distanza').innerHTML += distance.toPrecision(3);
 
 let price;
 
